@@ -15,6 +15,7 @@ let abs = Infinity;
 let left = 0;
 let right = 0;
 
+//index 변수
 let start = 0;
 let end = n - 1;
 
@@ -27,6 +28,9 @@ while (start < end) {
     right = arr[end];
   }
 
+  //sum이 0이면 더 이상 안 봐도 되니까 break;
+  //sum이 음수면 수를 키우고
+  //sum이 양수면 수를 줄여보며 새로운 sum을 구해보기
   if (sum === 0) {
     break;
   } else if (sum < 0) {
